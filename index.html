@@ -41,37 +41,12 @@
 			console.log('message passed', message.height);
 
 			document.getElementById('sf-iframe').style.height = message.height + 'px';
-		} , false);
-
-
-		function setSrc1() {
-			document.getElementById('sf-iframe').src = 'https://preprod-stonehaven-llc.cs218.force.com/devtestwebsite2/s/?c__color=aqua&c__shape=circle';
-		}
-
-		function setSrc2() {
-			document.getElementById('sf-iframe').src = 'https://preprod-stonehaven-llc.cs218.force.com/devtestwebsite2/s/?c__color=green&c__shape=triangle';
-		}
-
-		function setSrc3() {
-			document.getElementById('sf-iframe').src = 'https://preprod-stonehaven-llc.cs218.force.com/devtestwebsite2/s/?c__color=red&c__shape=rectangle';
-		}
+		}, false);
 
 	</script>
 
 	<div class="container">
 		
-		<img style="display: flex; height: 300px; width: 420px; justify-self: center; align-items: center; align-self: center;" src="https://cdn.dribbble.com/users/58639/screenshots/3788063/936.jpg"/>
-
-		<div class="buttons-container">
-
-			<button onclick="setSrc1()">Set iFrame Src 1</button>
-
-			<button onclick="setSrc2()">Set iFrame Src 2</button>
-
-			<button onclick="setSrc3()">Set iFrame Src 3</button>
-
-		</div>
-
 		<!--Prod env-->
 		<!-- <iframe class="iframe-cst"
 				src="https://stonehaven-llc.force.com/ContactUs/s/" 
