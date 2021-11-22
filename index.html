@@ -33,6 +33,17 @@
 
 	<script>
 
+		let iframe = document.querySelector("#sf-iframe");
+
+		window.addEventListener('message', function(e) {
+			// message that was passed from iframe page
+			let message = e.data;
+			console.log('message passed', message.height);
+
+			iframe.style.height = message.height + 'px';
+		} , false);
+
+
 		function setSrc1() {
 			document.getElementById('sf-iframe').src = 'https://preprod-stonehaven-llc.cs218.force.com/devtestwebsite2/s/?c__color=aqua&c__shape=circle';
 		}
