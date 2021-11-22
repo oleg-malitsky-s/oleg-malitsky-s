@@ -33,14 +33,14 @@
 
 	<script>
 
-		let iframe = document.querySelector("#sf-iframe");
+		var iframe = document.getElementById('sf-iframe');
 
 		window.addEventListener('message', function(e) {
 			// message that was passed from iframe page
 			let message = e.data;
 			console.log('message passed', message.height);
 
-			iframe.style.height = message.height + 'px';
+			document.getElementById('sf-iframe').style.height = message.height + 'px';
 		} , false);
 
 
